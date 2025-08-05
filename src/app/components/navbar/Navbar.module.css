@@ -1,0 +1,119 @@
+.navbar {
+  width: 60%;
+  margin: 2rem auto 0 auto;
+  background: #f2f7f5;
+  padding: 0.6rem 0rem;
+  box-shadow: none;
+  font-family: 'Segoe UI', sans-serif;
+   margin: 0 auto 0 auto;
+}
+
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem; 
+}
+
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #547b5e;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: #7ba395;
+}
+
+.menu {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #40544e;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #7ba395;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #40544e;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.bar1Open {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.bar2Open {
+  opacity: 0;
+}
+.bar3Open {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f2f7f5;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    gap: 1.2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+
+  .menu li a {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

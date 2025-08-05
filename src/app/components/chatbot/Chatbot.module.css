@@ -1,0 +1,118 @@
+.chatbotContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 0; 
+  z-index: 1000;
+}
+
+.toggleWrapper {
+  position: absolute;
+  bottom: 0;
+  margin-right: -40px; 
+}
+
+
+.chatWindow {
+  position: absolute;
+  bottom: 70px;
+  right: 50px;
+  width: 320px;
+  max-height: 460px;
+  background: #f2f7f5;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  font-size: 0.95rem;
+  color: #40544e;
+}
+
+.botMessage {
+  background: #e5f5f0;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 16px 16px 16px 4px;
+  align-self: flex-start;
+  max-width: 80%;
+}
+
+.userMessage {
+  background: #d3eade;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 16px 16px 4px 16px;
+  align-self: flex-end;
+  max-width: 80%;
+}
+
+.inputArea {
+  display: flex;
+  border-top: 1px solid #c7ded3;
+  padding: 0.7rem;
+  background-color: #f2f7f5;
+}
+
+.inputArea input {
+  flex: 1;
+  border: none;
+  background: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.inputArea button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #7ba395;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.inputArea button:hover {
+  background-color: #547b5e;
+}
+
+.toggleButton {
+  background-color: #7ba395;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .chatWindow {
+    width: 90vw;
+    right: 0;
+  }
+
+  .chatbotContainer {
+    right: 10px;
+    bottom: 15px;
+  }
+
+  .toggleButton {
+    width: 46px;
+    height: 46px;
+    font-size: 1.3rem;
+  }
+}

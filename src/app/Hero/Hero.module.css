@@ -1,0 +1,469 @@
+.container {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 0;     
+  margin-top: 0;      
+}
+
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  z-index: -1;
+}
+
+.leftWrapper {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.leftImage {
+  width: 120%;
+  height: 100vh;
+  background-image: url("/images/left.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scaleX(-1);
+  margin-left: -150px;
+}
+
+.rightImage {
+  flex: 1;
+  background-image: url("/images/right.png");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.header {
+  width: 60%;
+  margin: 0 auto;
+  height: 470px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.headerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.headerText {
+  position: absolute;
+  top: 54%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  max-width: 80%;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  letter-spacing: 1px;
+
+}
+
+.learnButton {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: rgb(69, 92, 83);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.rectangles {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.rectangle {
+  margin: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle1Content {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.rectangle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #abc4b8f1;
+  height: 38vh;
+  padding: 0; 
+}
+
+.productBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buyButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  cursor: pointer;
+}
+
+
+.rectangle3 {
+background: linear-gradient(to right, #547b5e, #91b6b2);
+
+  padding: 2rem 1.5rem;
+  height: 32vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rectangle3Content {
+  max-width: 80%;
+}
+
+.rectangle3Title {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 4px;
+}
+
+.rectangle3Text {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+}
+
+.readMoreButton1 {
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: rgb(82, 93, 86);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.readMoreButton2 {
+  padding: 0.7rem 2.5rem;
+  font-size: 0.9rem;
+  background-color: #40544e;
+  color: #ffffff;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  align-self: center;
+}
+
+.readMoreButton3 {
+  padding: 0.7rem 2rem;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  color: rgb(64, 84, 78);
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  align-self: center;
+}
+
+.rectangle4 {
+  background-color: #bdddce;
+  height: 400px; 
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.rectangle4Inner {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.rectangle4Image {
+  flex: 1;
+  background-image: url('/images/spa.png');
+  background-size: cover;
+  background-position: center;
+  height: 100%; 
+}
+
+.rectangle4TextContent {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+}
+
+.rectangle4Description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.rectangle5 {
+  background-color: #547b5e;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.rectangle5Content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1000px;
+  width: 100%;
+  align-items: center;
+}
+
+.contactInfo {
+  flex: 1;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contactInfo h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.verticalDivider {
+  width: 1px;
+  background-color: #ccc;
+  height: 100%;
+  min-height: 180px;
+}
+
+.infoContent {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rectangle5Title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-align: center;
+
+}
+
+.rectangle5Text {
+  font-size: 1.05rem;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+}
+
+.readMoreButton:hover {
+  background-color: #5aa98c;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .background {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftImage,
+  .rightImage {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .headerImage {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .headerText {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    color: white;
+    z-index: 2;
+    text-align: center;
+    background: #0000001d;
+    border-radius: 12px;
+    width: 90%;
+  }
+
+  .headerText h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+  }
+
+  .headerText p {
+    font-size: 0.95rem;
+  }
+
+  .learnButton {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .rectangles {
+    width: 100%;
+  }
+
+  .rectangle {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2rem 1rem;
+  }
+
+  .rectangle1Content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .rectangle2 {
+    padding: 0;
+  }
+
+  .productBox {
+    width: 100%;
+    height: auto;
+  }
+
+  .productImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+
+  .buyButton {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+    margin-top: 1rem;
+    width: fit-content;
+  }
+ .rectangle2,
+  .rectangle3,
+  .rectangle4,
+  .rectangle5 {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .rectangle2Content,
+  .rectangle3Content,
+  .rectangle4TextContent,
+  .rectangle5Content {
+    text-align: center;
+  }
+
+  .rectangle4Inner {
+    flex-direction: column;
+  }
+
+  .rectangle4Image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .rectangle4TextContent {
+    padding: 1.5rem 1rem;
+  }
+
+  .rectangle5Content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .verticalDivider {
+    display: none;
+  }
+
+  .readMoreButton1,
+  .readMoreButton2,
+  .readMoreButton3 {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .contactInfo,
+  .rectangle5Title,
+  .rectangle5Text {
+    text-align: center;
+  }
+}
